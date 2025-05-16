@@ -1,0 +1,186 @@
+/* Register.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Ensure full-screen height and center contents */
+.register-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  overflow: visible;
+  position: relative;
+  z-index: 0;
+}
+
+/* Glassmorphism form box */
+.register-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 0.7s ease;
+  overflow: visible;
+  position: relative;
+  z-index: 0;
+}
+
+
+.logo-spin {
+  width: 60px;
+  margin-bottom: 20px;
+  animation: spin 5s linear infinite;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.register-form .input-group {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.input-group {
+  position: relative;
+  z-index: 100; /* ensures dropdown appears above other glass elements */
+}
+
+/* .input-group::after {
+  content: '▼';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: white;
+  z-index: 101;
+} */
+
+
+.input-group:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.input-group .icon {
+  margin-right: 10px;
+  color: #00ffff;
+  font-size: 1.2rem;
+}
+
+.input-group input ,
+.input-group select {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+}
+
+
+/* Optional: add a caret icon for better UI */
+.input-group select:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #00ffe0;
+}
+
+
+.input-group option {
+  background: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background: linear-gradient(145deg, #00c9ff, #92fe9d);
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 12px;
+  color: #000;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: perspective(1px) translateZ(0);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(145deg, #92fe9d, #00c9ff);
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.login-redirect {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.login-link {
+  color: #00ffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  color: #92fe9d;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

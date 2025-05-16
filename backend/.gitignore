@@ -1,0 +1,11 @@
+venv
+uploads
+static
+node_modules
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.png
+static/
+uploads/
