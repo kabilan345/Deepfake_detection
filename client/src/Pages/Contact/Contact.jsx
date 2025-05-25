@@ -9,53 +9,57 @@ import {
 } from 'react-icons/fa';
 import './Contact.css';
 import kabilan from '../../assets/kabilan.jpg';
+import vasanth from '../../assets/vasanthkumar.jpg';
+import vicky from '../../assets/vicky.jpg';
+import yuvaraj from '../../assets/yuvaraj.jpg'
 
 const teamMembers = [
   {
-    name: "Kabilan",
+    name: "Kabilan B",
     degree: "B.E CSE",
     college: "Adhiparasakthi College Of Engineering",
-    contribution: "Frontend Developer",
-    linkedin: "https://www.linkedin.com/in/kabilan-b-engineer2003?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    contribution: "Handled AI model development including dataset preprocessing, training, testing, and performance optimization.",
+    linkedin: "https://www.linkedin.com/in/kabilan-b-engineer2003/",
     github: "https://github.com/kabilan345",
     insta: "https://www.instagram.com/mr__kabi__chan/",
     mail: "kabilan.b2003@gmail.com",
-    image: kabilan  // Replace with your real image URL
+    image: kabilan
   },
   {
-    name: "Bob Johnson",
-    degree: "B.Tech IT",
-    college: "XYZ University",
-    contribution: "Backend Developer",
-    linkedin: "#",
-    github: "#",
-    insta: "tel:+15557654321",
-    mail: "mailto:bob@example.com",
-    image: "https://i.pravatar.cc/150?img=2"
+    name: "Vasanthkumar M",
+    degree: "B.E CSE",
+    college: "Adhiparasakthi College Of Engineering",
+    contribution: "Developed the frontend UI for the Deepfake Detection system with real-time results and visual feedback.",
+    linkedin: "https://www.linkedin.com/in/vasanthkumar-m-403135318/",
+    github: "https://github.com/Vasanthkumar63",
+    insta: "https://www.instagram.com/drugs_to_ktm_vasanth15/",
+    mail: "vasanthmoorthy15@gmail.com",
+    image: vasanth 
   },
   {
-    name: "Carol Lee",
-    degree: "B.Tech AI&DS",
-    college: "XYZ University",
-    contribution: "AI Model Trainer",
-    linkedin: "#",
-    github: "#",
-    insta: "tel:+15553456789",
-    mail: "mailto:carol@example.com",
-    image: "https://i.pravatar.cc/150?img=3"
+    name: "Vignesh E",
+    degree: "B.E CSE",
+    college: "Adhiparasakthi College Of Engineering",
+    contribution: "Built and integrated backend APIs using Flask to process media and serve AI model predictions.",
+    linkedin: "https://www.linkedin.com/in/vignesh-e-cse-874332301/",
+    github: "https://github.com/Vigneshelumala",
+    insta: "https://www.instagram.com/rossi__vs__vicky/",
+    mail: "vvignesh25540@gmail.com",
+    image: vicky 
   },
   {
-    name: "David Kumar",
-    degree: "B.Tech CSE",
-    college: "XYZ University",
-    contribution: "UI/UX Designer",
-    linkedin: "#",
-    github: "#",
-    insta: "tel:+15554321987",
-    mail: "mailto:david@example.com",
-    image: "https://i.pravatar.cc/150?img=4"
+    name: "Yuvaraj S",
+    degree: "B.E CSE",
+    college: "Adhiparasakthi College Of Engineering",
+    contribution: "Designed and managed the database system to store user data, detection logs, and media records.",
+    linkedin: "https://www.linkedin.com/in/yuvaraj-s-20ba87324/",
+    github: "https://github.com/yuvarajselvam2003",
+    insta: "https://www.instagram.com/so_mitta_sotta/",
+    mail: "yuvarajpulunthai@gmail.com",
+    image: yuvaraj 
   }
 ];
+
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });

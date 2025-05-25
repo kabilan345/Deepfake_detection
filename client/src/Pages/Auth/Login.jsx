@@ -42,6 +42,7 @@ const Login = () => {
   };
 
   return (
+    <>
     <div className="login-container">
       <div className="login-glass fade-in">
         {/* <img src={logo} alt="Logo" className="logo-spin" /> */}
@@ -84,6 +85,7 @@ const Login = () => {
       </div>
       <ToastContainer />
     </div>
+    </>
   );
 };
 

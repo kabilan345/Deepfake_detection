@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import LoadingScreen from './components/LoadingScreen'; // ✅ Custom loading screen
 import { useAuth } from './context/AuthContext';
 
+
 // Lazy load your page components
 const Home = lazy(() => import('./Pages/Home/Home'));
 const Contact = lazy(() => import('./Pages/Contact/Contact'));

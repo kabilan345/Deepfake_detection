@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
+import gif from '../../assets/gif.mp4'
 
 export default function Home() {
   const navigate = useNavigate();
@@ -22,11 +23,12 @@ export default function Home() {
         </p>
         <center>
         <div className="video-container">
-          <video autoPlay loop muted className="deepfake-video">
-            <source src="/media/sample_deepfake.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+  <video autoPlay loop muted className="deepfake-video">
+    <source src={gif} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
         </center>
 
         <div className="awareness-container">

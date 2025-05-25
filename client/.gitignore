@@ -30,3 +30,4 @@ dist-ssr
 public/*
 node_modules/
 venv/
+.env

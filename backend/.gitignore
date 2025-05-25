@@ -9,3 +9,4 @@ node_modules
 *.png
 static/
 uploads/
+.env
