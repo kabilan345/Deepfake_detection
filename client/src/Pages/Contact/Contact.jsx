@@ -60,7 +60,6 @@ const teamMembers = [
   }
 ];
 
-
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
